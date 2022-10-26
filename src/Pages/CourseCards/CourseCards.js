@@ -1,15 +1,17 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { useLoaderData } from 'react-router-dom';
 import './CourseCards.css'
 
 const CourseCards = () => {
+    const courses = useLoaderData();
     return (
         <div>
-            <div className='my-card'>
-                <img src="https://www.pexels.com/photo/woman-with-white-sunvisor-running-40751/" alt="" />
-                <h2>this is title</h2>
-                <Button>button</Button>
-            </div>
+            {courses.map(course => <div className='my-card' key = {course.id}>
+                <img src={course.image} alt="" />
+                <h2>{course.title}</h2>
+                <Button variant="info">Info</Button>
+            </div>)}
         </div>
     );
 };

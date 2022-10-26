@@ -1,4 +1,12 @@
 .my-card{
     display: flex;
     justify-content: space-around;
+    border: 2px solid violet;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+}
+.my-card img{
+    width: 20%;
 }
