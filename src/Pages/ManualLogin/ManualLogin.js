@@ -24,12 +24,9 @@ const ManualLogin = () => {
                 console.log(user);
                 form.reset();
                 setError('');
-                // if (user.emailVerified) {
-                //     navigate(from, { replace: true });
-                // }
-                // else {
-                //     toast.error('Your email is not verified. Please verify your email address.')
-                // }
+                if (user.uid) {
+                    navigate(from, { replace: true });
+                }
             })
             .catch(error => {
                 console.error(error)
