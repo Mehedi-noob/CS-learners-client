@@ -6,6 +6,7 @@ import Categories from "../Pages/Categories/Categories";
 import CourseCards from "../Pages/CourseCards/CourseCards";
 import CourseDemo from "../Pages/CourseDemo/CourseDemo";
 import CourseDetails from "../Pages/CourseDetails/CourseDetails";
+import ErrorElement from "../Pages/ErrorElement/ErrorElement";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 
@@ -13,10 +14,12 @@ export const routes = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorElement></ErrorElement>,
         children: [
             {
                 path: '/',
                 element:<Home></Home>
+                
             },
             {
                 path: '/courses',

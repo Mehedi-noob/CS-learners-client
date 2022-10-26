@@ -1,22 +1,22 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
     return (
         <Navbar className='mb-3' collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">CS-Learners</Navbar.Brand>
+                <Navbar.Brand>CS-Learners</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#features">Courses</Nav.Link>
-                        <Nav.Link href="#pricing">FAQ</Nav.Link>
-                        <Nav.Link href="#pricing">Blog</Nav.Link>
-                        <Nav.Link href="#pricing">Login</Nav.Link>
+                    <Nav className="">
+                        <Link className='mx-5' to="/">Home</Link>
+                        <Link className='mx-5' to="/courses">Courses</Link>
+                        <Link className='mx-5' to="/faq">FAQ</Link>
+                        <Link className='mx-5' to="/blog">Blog</Link>
+                        <Link className='mx-5' to="/login">Login</Link>
                     </Nav>
                     {/* <Nav>
                         <Nav.Link href="#deets">More deets</Nav.Link>
