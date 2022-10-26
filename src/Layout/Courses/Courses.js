@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
+import RightNav from '../../Pages/RightNav/RightNav';
 
 const Courses = () => {
     return (
@@ -12,7 +13,7 @@ const Courses = () => {
                     </Outlet>
                 </Col>
                 <Col lg="2">
-                    <h2>this is right nav</h2>
+                    <RightNav></RightNav>
                 </Col>
             </Row>
         </Container>
