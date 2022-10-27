@@ -2,11 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 import Courses from "../Layout/Courses/Courses";
 import Main from "../Layout/Main/Main";
 import Blog from "../Pages/Blog/Blog";
-import Categories from "../Pages/Categories/Categories";
 import CourseCards from "../Pages/CourseCards/CourseCards";
 import CourseDemo from "../Pages/CourseDemo/CourseDemo";
 import CourseDetails from "../Pages/CourseDetails/CourseDetails";
 import ErrorElement from "../Pages/ErrorElement/ErrorElement";
+import Faq from "../Pages/Faq/Faq";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import PrivateRoute from "../Pages/PrivateRoute/PrivateRoute";
@@ -55,6 +55,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '/faq',
+                element: <Faq></Faq>
             }
         ]
     }

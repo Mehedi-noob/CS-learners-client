@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -39,7 +40,7 @@ const Home = () => {
                                 </Col>
                                 <Col lg="6" className='align-items-center'>
                                     <h3>Because the complexity is greater than you and me. with a world of possibilities</h3>
-                                    <h3>hurry and join our <Button variant="outline-dark">Courses</Button></h3>
+                                    <h3>hurry and join our <Link to='/courses'><Button variant="outline-dark">Courses</Button></Link></h3>
                                 </Col>
                             </Row>
                         </Col>
