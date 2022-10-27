@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaIcons, FaUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import './Header.css';
@@ -13,7 +13,7 @@ import { DarkModeToggle } from '@anatoliygatt/dark-mode-toggle';
 
 const Header = () => {
 
-    let [color, setColor] = useState('');
+    
     const [mode, setMode] = useState('dark');
 
     const { user, logOut } = useContext(AuthContext);
@@ -53,7 +53,10 @@ const Header = () => {
                                     <h3>{user?.displayName}</h3>
                                 </div>
                                 :
-                                <FaUser></FaUser>
+                                <div className='visibility'>
+                                    <FaUser></FaUser>
+                                    <h3>{user?.displayName}</h3>
+                                </div>
                             }
                         </Nav.Link>
                 
