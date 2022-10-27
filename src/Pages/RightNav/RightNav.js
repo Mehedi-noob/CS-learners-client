@@ -7,7 +7,7 @@ const RightNav = () => {
     const [categories, setCat] = useState([]);
 
     useEffect( ()=> {
-        fetch('http://localhost:5000/categories')
+        fetch('https://b610-lerning-platform-server-side-mehedi-noob.vercel.app/categories')
         .then(res=> res.json())
         .then(data => setCat(data));
     },[])
