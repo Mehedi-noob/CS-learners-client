@@ -39,7 +39,7 @@ export const routes = createBrowserRouter([
                     },
                     {
                         path: '/courses/details/:id',
-                        loader: ({params})=> fetch(`https://b610-lerning-platform-server-side-mehedi-noob.vercel.app//courses/${params.id}`),
+                        loader: ({params})=> fetch(`https://b610-lerning-platform-server-side-mehedi-noob.vercel.app/courses/${params.id}`),
                         element: <PrivateRoute><CourseDetails></CourseDetails></PrivateRoute>
                     }
                 ]
