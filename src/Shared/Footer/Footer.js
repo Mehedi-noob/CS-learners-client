@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className='footer'>
+        <footer className='footer my-5'>
             <p>Copyright © 2022 CS-learners, Inc.</p>
         </footer>
     );

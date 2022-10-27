@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
 
 * {
     padding: 0;
@@ -49,7 +49,7 @@ div.text a:hover {
     text-decoration: underline; 
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     section.notFound {
         flex-direction: column;
         justify-content: space-around;
